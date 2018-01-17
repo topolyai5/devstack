@@ -15,7 +15,7 @@
 
 echo "Ensuring we don't have crazy refs"
 
-REFS=`grep BRANCH stackrc | grep -v -- '-master' | grep -v -- '-stable/mitaka'`
+REFS=`grep BRANCH stackrc | grep -v -- '-master' | grep -v -- '-mitaka-eol'`
 rc=$?
 if [[ $rc -eq 0 ]]; then
     echo "Branch defaults must be master. Found:"
